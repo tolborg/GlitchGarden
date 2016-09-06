@@ -4,7 +4,6 @@ using System.Collections;
 
 public class LevelManager : MonoBehaviour {
 
-
 	public float autoLoadNextLevelAfter;
 
 
@@ -15,8 +14,10 @@ public class LevelManager : MonoBehaviour {
 	}
 
 
-	public void LoadLevel(string name){
-		SceneManager.LoadScene(name);
+	public void LoadLevel(Object scene){
+		Debug.Log(scene.name);
+		SceneManager.LoadScene(scene.name);
+
 	}
 
 
