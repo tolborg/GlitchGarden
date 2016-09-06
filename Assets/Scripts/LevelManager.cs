@@ -15,9 +15,7 @@ public class LevelManager : MonoBehaviour {
 
 
 	public void LoadLevel(Object scene){
-		Debug.Log(scene.name);
 		SceneManager.LoadScene(scene.name);
-
 	}
 
 
